@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JdbcEntitySetup
+	xmlns="http://www.ontimize.com/schema/jdbc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
+	catalog="" schema="" table="tuser_role"
+	datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
+	<DeleteKeys>
+		<Column>usro_id</Column>
+	</DeleteKeys>
+	<UpdateKeys>
+		<Column>usro_id</Column>
+	</UpdateKeys>
+	<Queries>
+		<Query id="login">
+			<Sentence>
+                <![CDATA[
+                    SELECT
+                        #COLUMNS#
+                    FROM tuser
+                    #WHERE#
+                    #ORDER#
+                ]]>
+            </Sentence>
+		</Query>
+		<Query id="userRole">
+			<AmbiguousColumns>
+				<AmbiguousColumn name="USER_" prefix="tu" />
+				<AmbiguousColumn name="ID_ROLENAME" prefix="tr" />
+			</AmbiguousColumns>
+			<Sentence>
+					<![CDATA[
+					select
+						#COLUMNS#
+					from
+						tuser tu
+						JOIN tuser_role tur ON tu.USER_ = tur.USER_
+						JOIN trole tr ON tur.ID_ROLENAME = tr.ID_ROLENAME
+					#WHERE#
+					#ORDER#
+					]]>
+			</Sentence>
+		</Query>
+		<Query id="serverPermissions">
+			<AmbiguousColumns>
+				<AmbiguousColumn name="ID_ROLENAME" prefix="tr" />
+				<AmbiguousColumn name="ID_SERVER_PERMISSION" prefix="tsp" />
+			</AmbiguousColumns>
+			<Sentence>
+					<![CDATA[
+					select
+						#COLUMNS#
+					from
+						TROLE tr
+						JOIN trole_server_permission trsp ON tr.ID_ROLENAME = trsp.ID_ROLENAME
+						JOIN tserver_permission tsp ON trsp.ID_SERVER_PERMISSION = tsp.ID_SERVER_PERMISSION
+					#WHERE#
+					#ORDER#
+					]]>
+		</Sentence>
+		</Query>
+		<Query id="clientPermissions">
+			<Sentence>
+					<![CDATA[
+					select
+						#COLUMNS#
+					from
+						trole tr
+					#WHERE#
+					#ORDER#
+					]]>
+		</Sentence>
+		</Query>
+	</Queries>
+</JdbcEntitySetup>

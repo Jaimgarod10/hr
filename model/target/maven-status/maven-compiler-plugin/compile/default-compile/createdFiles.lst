@@ -1,0 +1,4 @@
+model\core\dao\CandidateDao.class
+model\core\dao\BooksDao.class
+model\core\dao\UserRoleDao.class
+model\core\dao\UserDao.class
