@@ -1,6 +1,9 @@
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\dao\CandidateDao.java
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\service\UserService.java
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\dao\UserDao.java
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\service\CandidateService.java
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\dao\UserRoleDao.java
-C:\Users\Pablo\eclipse-workspace\hr\model\src\main\java\model\core\dao\BooksDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\dao\UserDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\dao\UserRoleDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\service\InstanceService.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\dao\BooksDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\dao\CandidateDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\dao\InstanceDao.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\service\BooksService.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\service\CandidateService.java
+C:\Users\Usuario\eclipse-workspace\hr\model\src\main\java\model\core\service\UserService.java
