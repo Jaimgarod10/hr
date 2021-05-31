@@ -6,9 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import api.core.service.IAuthorsService;
-import api.core.service.IBooksService;
-import api.core.service.ICandidateService;
-import api.core.service.IUsersService;
 
 import com.ontimize.jee.server.rest.ORestController;
 
