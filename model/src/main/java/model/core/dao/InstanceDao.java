@@ -13,5 +13,6 @@ public class InstanceDao extends OntimizeJdbcDaoSupport {
 
  public static final String ATTR_id = "id";
  public static final String ATTR_date_of_admission = "date_of_admission";
+ public static final String ATTR_satatus = "status";
  public static final String ATTR_id_books = "id_books";
 }

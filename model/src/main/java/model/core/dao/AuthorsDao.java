@@ -15,5 +15,8 @@ public class AuthorsDao extends OntimizeJdbcDaoSupport {
  public static final String ATTR_Name = "Name";
  public static final String ATTR_Surnames = "Surnames";
  public static final String ATTR_Age = "Age";
+ public static final String ATTR_date_of_birth = "date_of_birth";
+ public static final String ATTR_place_of_birth = "place_of_birth";
+ public static final String ATTR_date_of_death = "date_of_death";
 
 }

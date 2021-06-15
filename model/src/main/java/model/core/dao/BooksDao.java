@@ -12,6 +12,7 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 public class BooksDao extends OntimizeJdbcDaoSupport {
 
  public static final String ATTR_id = "id";
+ public static final String ATTR_photo = "photo";
  public static final String ATTR_Title = "Title";
  public static final String ATTR_Description = "Description";
  public static final String ATTR_Numberofsheets = "Number of sheets";

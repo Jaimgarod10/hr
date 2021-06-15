@@ -16,6 +16,7 @@ public class LoansDao extends OntimizeJdbcDaoSupport {
  public static final String ATTR_departure_date = "departure_date";
  public static final String ATTR_maximum_date_to_return = "maximum_date_to_return";
  public static final String ATTR_return_date = "return_date";
+ public static final String ATTR_observations = "observations";
  public static final String ATTR_instance_id = "instance_id";
 
 }
